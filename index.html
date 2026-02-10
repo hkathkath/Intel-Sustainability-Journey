@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Intel Sustainability — Timeline</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Interactive timeline of Intel's sustainability goals." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="img/leaf.svg" alt="icon" class="brand-icon" />
+      <h1>Intel Sustainability Goals</h1>
+    </div>
+    <p class="sub">A horizontal, scroll-snap timeline highlighting key targets.</p>
+  </header>
+
+  <main>
+    <section class="timeline-wrap">
+      <button id="prev" class="nav-btn">‹</button>
+      <div id="timeline" class="timeline" tabindex="0">
+        <article class="card" data-year="2025">
+          <img src="img/leaf.svg" class="card-icon" alt="icon" />
+          <h2>2025 — Responsible Sourcing</h2>
+          <p>Increase responsible sourcing across supply chain; expand renewable energy projects for fabs.</p>
+        </article>
+
+        <article class="card" data-year="2030">
+          <img src="img/leaf.svg" class="card-icon" alt="icon" />
+          <h2>2030 — 30% Emissions Reduction</h2>
+          <p>Reduce greenhouse gas emissions intensity by 30% across global operations (baseline year).</p>
+        </article>
+
+        <article class="card" data-year="2035">
+          <img src="img/leaf.svg" class="card-icon" alt="icon" />
+          <h2>2035 — Circular Products</h2>
+          <p>Design products for circularity with increased recycling and reduced material waste.</p>
+        </article>
+
+        <article class="card" data-year="2040">
+          <img src="img/leaf.svg" class="card-icon" alt="icon" />
+          <h2>2040 — Net-Zero Operations</h2>
+          <p>Achieve net-zero greenhouse gas emissions across Intel operations through energy, efficiency, and offsets.</p>
+        </article>
+
+        <article class="card" data-year="2050">
+          <img src="img/leaf.svg" class="card-icon" alt="icon" />
+          <h2>2050 — Climate Leadership</h2>
+          <p>Demonstrate industry leadership on climate, circular economy, and sustainable innovation.</p>
+        </article>
+      </div>
+      <button id="next" class="nav-btn">›</button>
+    </section>
+
+    <div class="progress" aria-hidden="true" id="progress"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
